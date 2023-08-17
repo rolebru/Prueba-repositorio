@@ -1,0 +1,270 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 200px ;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    float: left;
+    color: aliceblue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.barra {
+    float: right;
+}
+
+.barra ul {
+    list-style: none;
+}
+
+.barra ul li {
+    display: inline-block;
+}
+
+.barra a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.barra a:hover {
+    color: rgb(192, 192, 42);
+    text-decoration: underline;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(213, 213, 47);
+    background-image:url(Multimedia/tennis-5782695_1280.jpg) ;
+    background-size: cover;
+    display: flex;
+    justify-content:right;
+    align-content: center;
+    align-items: center;
+}
+
+.call{
+    width: 50%;
+    /* width: 70%;
+    color:rgb(255, 255, 255);
+    border: 5px solid rgb(192, 192, 42);
+    padding: 10px;
+    background-color: black;
+    float: left;
+    margin: 10px; */
+}
+h1{
+    color:rgb(192, 192, 42);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10PX;
+}
+.call p{
+    margin-bottom: 10px;
+}
+.call a{
+    color: rgb(192, 192, 42);
+    text-decoration: underline;
+
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: rgb(192, 192, 42);
+}
+section {
+    height: 600px;
+    width: 100%;
+    
+}
+footer{
+    text-align: center;
+    background-color: black;
+}
+footer p {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 20px;
+}
+.redes{
+    color: rgb(192, 192, 42);
+    font-size: 50px;
+}
+.subir{
+    color:rgb(192, 192, 42) ;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    font-size: 40px;
+    
+}
+.contacto{
+    font-size: 25px;
+}
+
+form{
+    width: 100%; ;
+    height: 100vh;
+    padding: 50px;
+}
+
+form input{
+    width: 100%;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 5px solid black;
+}
+
+form input::placeholder{
+    color: rgba(0, 0, 0, 0.5) ;
+}
+
+form textarea::placeholder{
+    color: rgba(0, 0, 0, 0.5) ;
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+form textarea{
+    width: 100%;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 5px solid black;
+}
+
+form #enviar{
+    background-color:rgb(192, 192, 42) ;
+    border: 4px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.section1{
+    width: 100%;
+    border: 5px solid rgb(8, 0, 0);
+    display: grid;
+    background-color: rgb(192, 192, 42) ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    /* grid-column-gap: ; */
+    grid-template-areas: "img1 img2 img3 img3"
+                        "img1 img2 img4 img5"
+                        "img6 img7 img4 img8";
+    grid-gap: 15px;
+    padding: 15px;
+}
+
+
+.item{
+    background-color: rgb(192, 192, 42);
+    border: 5px solid black;
+    
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    filter: grayscale(100%);
+    transition: all 0.7s;
+}
+.item:hover{
+    filter: grayscale(0%);
+    transform: scale(1.08);
+}
+
+.item1{
+    background-image: url(Multimedia/eventos.jpg);
+    grid-area: img1;
+}
+.item2{
+    background-image: url(Multimedia/eventos1.jpg);
+    grid-area: img2;
+}
+.item3{
+    background-image: url(Multimedia/eventos2.jpg);
+    grid-area: img3;
+    object-fit: cover;
+    
+}
+.item4{
+    background-image: url(Multimedia/eventos4.jpg);
+    grid-area: img4;
+}
+.item5{
+    background-image: url(Multimedia/eventoflayer.jpg);
+    grid-area: img5;
+}
+.item6{
+    background-image: url(Multimedia/tennis-5782695_1280.jpg);
+    grid-area: img6;
+}
+.item7{
+    background-image: url(Multimedia/tennis-1381230_640.jpg);
+    grid-area: img7;
+}
+.item8{
+    background-image: url(Multimedia/sport-873361_1280.jpg);
+    grid-area: img8;
+}
+.contenedor{
+    display: flex;
+    height: 900px;
+}
+
+.card{
+    height: 450px;
+    width: 250px;
+    background-color: rgb(192, 192, 42);
+}
+.card__img{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    background-image: url(Multimedia/rodri\ cara.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card__title{
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+.card__text{
+    padding: 15px;
+}
+.card__boton{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: black;
+    padding: 10px 20px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+
