@@ -76,11 +76,11 @@ h1{
     font-size: 25px;
     margin-bottom: 10PX;
 }
-.call p{
+.row p{
     margin-bottom: 10px;
 }
-.call a{
-    color: rgb(192, 192, 42);
+.row a{
+    color: rgb(192, 192, 42) !important;
     text-decoration: underline;
 
 }
@@ -164,7 +164,7 @@ form #enviar{
     padding: 10px;
 }
 
-.section1{
+.container-fluid{
     width: 100%;
     border: 5px solid rgb(8, 0, 0);
     display: grid;
@@ -229,11 +229,6 @@ form #enviar{
     background-image: url(Multimedia/sport-873361_1280.jpg);
     grid-area: img8;
 }
-.contenedor{
-    display: flex;
-    height: 900px;
-}
-
 .card{
     height: 450px;
     width: 250px;
